@@ -1,0 +1,12 @@
+1. Go to: https://www.microsoft.com/en-us/download/details.aspx?id=100593
+2. Download BOTH files:
+   - msmpisetup.exe (Runtime - MUST install first)
+   - msmpisdk.msi (SDK - Install second)
+3. Install both with default settings
+C:\Program Files\Microsoft MPI\Bin\mpiexec.exe
+C:\Program Files (x86)\Microsoft SDKs\MPI\Include\mpi.h
+C:\Program Files (x86)\Microsoft SDKs\MPI\Lib\x64\msmpi.lib
+
+
+ gcc -I"C:\Program Files (x86)\Microsoft SDKs\MPI\Include" -L"C:\Program Files (x86)\Microsoft SDKs\MPI\Lib\x64" test_mpi.c -lmsmpi -o test_mpi.exe
+ & "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 4 test_mpi.exe
