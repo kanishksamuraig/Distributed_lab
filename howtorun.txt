@@ -1,0 +1,15 @@
+for java
+#compilation
+javac file.java
+#run
+java file 
+
+#compilation
+gcc file.c -o file.exe -lws2_32
+#run
+./file.exe 
+
+#compilation
+gcc -fopenmp matrix.c -o matrix.exe
+#run
+./matrix.exe 
