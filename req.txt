@@ -1,0 +1,37 @@
+==================================================
+PROJECT 1: JAVA MULTITHREADED SOCKETS
+==================================================
+
+1. Compile both files:
+javac MultiThreadedServer.java Client.java
+
+2. Run the Server (Terminal 1):
+java MultiThreadedServer
+
+3. Run the Client (Terminal 2, 3, etc.):
+java Client
+
+
+==================================================
+PROJECT 2: JAVA RMI (RPC)
+==================================================
+
+1. Compile all three files:
+javac Calculator.java CalculatorServer.java CalculatorClient.java
+
+2. Run the Server (Terminal 1):
+java CalculatorServer
+
+3. Run the Client (Terminal 2):
+java CalculatorClient
+
+
+==================================================
+PROJECT 3: C UNIDIRECTIONAL PIPE (LINUX)
+==================================================
+
+1. Compile the file:
+gcc -o pipe_example pipe_example.c
+
+2. Run the executable:
+./pipe_example
